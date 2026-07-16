@@ -35,7 +35,7 @@ Instead of only using deep learning frameworks, this project focuses on understa
 - [ ] Gradient Descent
 - [ ] Regularization
 
-### Deep Learning Basics
+### Deep Learning
 
 - [ ] Gradient Descent
 - [ ] Backpropagation
