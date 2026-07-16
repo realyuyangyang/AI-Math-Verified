@@ -27,6 +27,14 @@ Instead of only using deep learning frameworks, this project focuses on understa
 - [ ] Probability
 - [ ] Optimization
 
+### Machine Learning
+
+- [ ] Linear Regression
+- [ ] Logistic Regression
+- [ ] Loss Functions
+- [ ] Gradient Descent
+- [ ] Regularization
+
 ### Deep Learning Basics
 
 - [ ] Gradient Descent
