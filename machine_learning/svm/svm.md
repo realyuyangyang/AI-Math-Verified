@@ -8,12 +8,11 @@ $$
 (x_i,y_i),\quad y_i\in\{-1,+1\}
 $$
 
-The decision boundary is:
+The decision boundary:
 
 $$
 w^Tx+b=0
 $$
-
 
 Prediction:
 
@@ -26,7 +25,7 @@ $$
 
 ## 2. Maximum Margin
 
-The distance from a point to the hyperplane:
+Distance from a point to the hyperplane:
 
 $$
 d=\frac{|w^Tx+b|}{||w||}
@@ -40,7 +39,7 @@ y_i(w^Tx_i+b)=1
 $$
 
 
-The two margin boundaries:
+The margin boundaries:
 
 $$
 w^Tx+b=1
@@ -60,7 +59,7 @@ Margin=\frac{2}{||w||}
 $$
 
 
-Maximize margin:
+Maximum margin:
 
 $$
 \max \frac{2}{||w||}
@@ -104,7 +103,7 @@ $$
 $$
 
 
-Objective:
+Objective function:
 
 $$
 \min
@@ -125,7 +124,7 @@ $$
 
 ## 5. Hinge Loss
 
-The hinge loss function:
+Hinge loss:
 
 $$
 L_i=
@@ -143,16 +142,16 @@ $$
 
 ---
 
-## 6. Kernel Function
+## 6. Kernel Trick
 
-Mapping input into high dimensional space:
+Mapping input into high-dimensional space:
 
 $$
 \phi(x)
 $$
 
 
-Kernel trick:
+Kernel function:
 
 $$
 K(x_i,x_j)
@@ -161,14 +160,14 @@ K(x_i,x_j)
 $$
 
 
-### Linear Kernel
+Linear kernel:
 
 $$
 K(x_i,x_j)=x_i^Tx_j
 $$
 
 
-### Polynomial Kernel
+Polynomial kernel:
 
 $$
 K(x_i,x_j)
@@ -177,7 +176,7 @@ K(x_i,x_j)
 $$
 
 
-### Gaussian RBF Kernel
+Gaussian RBF kernel:
 
 $$
 K(x_i,x_j)
@@ -188,16 +187,16 @@ $$
 
 ---
 
-## 7. Dual Optimization
+## 7. Dual Formulation
 
-Lagrangian multipliers:
+Lagrange multipliers:
 
 $$
 \alpha_i
 $$
 
 
-Dual form:
+Dual optimization:
 
 $$
 \max_\alpha
@@ -231,7 +230,7 @@ $$
 f(x)
 =
 \sum_i
-\alpha_i y_i K(x_i,x)+b
+\alpha_i y_iK(x_i,x)+b
 $$
 
 
@@ -244,7 +243,7 @@ $$
 
 ---
 
-## 9. Support Vector Condition
+## 9. Support Vectors
 
 Support vectors satisfy:
 
@@ -262,11 +261,12 @@ $$
 
 Only support vectors determine the decision boundary.
 
+
 ---
 
-## 10. Parameters
+## 10. Parameter Effects
 
-### C
+### C Parameter
 
 Large C:
 
@@ -274,9 +274,9 @@ $$
 C\uparrow
 $$
 
-- smaller training error
-- smaller margin
-- higher overfitting risk
+- Smaller training error
+- Narrower margin
+- Higher overfitting risk
 
 
 Small C:
@@ -285,11 +285,13 @@ $$
 C\downarrow
 $$
 
-- larger margin
-- more tolerance to errors
+- Larger margin
+- More tolerance to errors
 
 
-### Gamma (RBF Kernel)
+---
+
+### Gamma Parameter
 
 Large gamma:
 
@@ -297,7 +299,7 @@ $$
 \gamma\uparrow
 $$
 
-- complex decision boundary
+- More complex decision boundary
 
 
 Small gamma:
@@ -306,4 +308,4 @@ $$
 \gamma\downarrow
 $$
 
-- smoother decision boundary
+- Smoother decision boundary
